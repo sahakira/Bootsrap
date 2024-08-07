@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Cheat sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .navbar{
+           margin-bottom: 0;
+            }
+        </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+<!-- jumbstron -->
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to my wbsite!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+        featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead d-flex justify-content-center">
+    <button type="button" class="btn btn-primary ">learn more</button>
+    </p>
+</div>
+
+<!-- Typography -->
+    <div class="container">
+        <h1 class="page-header">Hello World! <small>secondary text</small></h1>
+        <hr>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, dolore? Sequi, doloribus
+            possimus? Ratione saepe ducimus dolores animi sit excepturi iure, facere culpa quisquam doloremque,
+            doloribus distinctio sunt sequi vel?</p>
+        <p><mark>Lorem ipsum dolor sit amet consectetur adipisicing elit.</mark> Libero accusantium sunt, ea inventore
+            assumenda
+            nostrum facere est optio iste,<del>illo harum laboriosam? Culpa possimus accusantium,</del> alias quaerat
+            repudiandae
+            voluptates explicabo.</p>
+
+        <hr>
+        <!-- alignment transfomatiom -->
+        <p class="text-left">left aligned text.</p>
+        <p class="text-right">right aligned text.</p>
+        <p class="text-center">center aligned text.</p>
+        <p class="text-justify">justify text.</p>
+        <p class="text-Nowrap">No wrap text.</p>
+
+
+
+
+        <!-- quick floats -->
+        <div class="float-right">div floated to right</div><br>
+        <div class="float-left">div floated to left</div><br>
+
+        <hr>
+
+        <!-- blockquote -->
+        <blockquote class="blockquote text-right">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, quo!</p>
+            <footer class="blockquote-footer">Quote by <cite title="john doe">john doe</cite></footer>
+        </blockquote>
+
+
+
+        <hr>
+
+        <!-- lists -->
+        <ul class="list-unstyled">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li class="list-inline-item">one</li>
+            <li class="list-inline-item">two</li>
+            <li class="list-inline-item">three</li>
+            <li class="list-inline-item">four</li>
+        </ul>
+
+        <!-- CODE -->
+        <code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+        <br>
+        chnage directory with<kbd>bc</kbd>
+        <br>
+        to edit setting, press<kbd><kbd>cltr</kbd> + <kbd>,</kbd></kbd>
+        to edit in browser <kbd><kbd>clt</kbd><kbd> + </kbd><kbd>,</kbd><kbd> * </kbd>
+
+            <hr>
+
+            <!-- color -->
+            <p class="text-primary">Lorem ipsum dolor sit amet.</p>
+            <p class="text-success">Lorem ipsum dolor sit amet.</p>
+            <p class="text-info">Lorem ipsum dolor sit amet.</p>
+            <p class="text-danger">Lorem ipsum dolor sit amet.</p>
+
+            <hr>
+
+            <!-- background color -->
+            <p class="bg-primary">Lorem ipsum dolor sit amet.</p>
+            <p class="bg-success">Lorem ipsum dolor sit amet.</p>
+            <p class="bg-info">Lorem ipsum dolor sit amet.</p>
+            <p class="bg-danger">Lorem ipsum dolor sit amet.</p>
+
+
+            <hr>
+
+
+            <div class="container">
+                <button class="btn btn-default">Default</button>
+                <a href="#" class="btn btn-default" role="button">link</a>
+                <input type="submit" class="btn btn-default" value="submit">
+                <br>
+                <br>
+                <hr>
+
+
+
+                <!-- contextual button -->
+                <button class=" btn btn-primary">Default</button>
+                <button class=" btn btn-succes">success</button>
+                <button class=" btn btn-info">info</button>
+                <button class=" btn btn-danger">danger</button>
+                <button class=" btn btn-warning">warning</button><br>
+                <hr>
+
+
+                <!-- button size -->
+                <button class=" btn btn-primary btn-lg">Default</button>
+                <button class=" btn btn-default">success</button>
+                <button class=" btn btn-info  btn-xs">info</button>
+                <button class=" btn btn-danger btn-sm">danger</button><br><br>
+                <button class=" btn btn-default btn-xs" disable="disabled">default</button>
+                <br><br>
+            </div>
+            <!-- forms -->
+            <div clas=" container">
+                <form>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Add name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" placeholder="Add email">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea type="text" class="form-control" placeholder="Add message"></textarea>
+                    </div>
+                    <select class="form-group">
+                        <label>Gender</label>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label>Upload file</label>
+                <input type="files" placeholder="choose-file">
+                <p class="help-block">only png and jpg allowed</p>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">check me out</label>
+            </div>
+            <button type="submit" class="btn btn-default">submit</button>
+            </form>
+
+
+
+            <hr>
+
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Add name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" placeholder="Add email">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea type="text" class="form-control" placeholder="Add message"></textarea>
+            </div>
+            <select class="form-group">
+                <label>Gender</label>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+    </div>
+    <div class="form-group">
+        <label>Upload file</label>
+        <input type="files" placeholder="choose-file">
+        <p class="help-block">only png and jpg file are allowed.</p>
+    </div>
+    <br><br>
+    <div class="checkbox">
+        <label><input type="checkbox">check me out</label>
+    </div>
+    <button type="submit" class="btn btn-default">submit</button>
+    </div>
+    <br><br>
+    <hr>
+    <form class="form-inline">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="email"><br>
+        </div>
+        <div class="form-group">
+            <label>password</label>
+            <input type="passsword" class="form-control" placeholder="password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">remember me
+            </label>
+            <button type="submit" class="btn btn-default">login</button>
+        </div>
+    </form>
+    </div>
+
+    <hr>
+
+
+    <!-- table -->
+    <div class="container">
+        <table class="table table-striped table-border table-hover table-condensed">
+            <tr class="danger">
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td>sita</td>
+                <td>gupta</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>rita</td>
+                <td>gupta</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th>gita</th>
+                <th>gupta</th>
+                <th>18</th>
+            </tr>
+            <tr>
+                <td>babita</td>
+                <th>gupta</th>
+                <th>20</th>
+            </tr>
+        </table>
+    </div>
+
+
+    <hr>
+    <!-- list-group -->
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item">item one</li>
+            <li class="list-group-item">item two</li>
+            <li class="list-group-item">item three</li>
+            <li class="list-group-item">item four</li>
+        </ul>
+
+        <div class="list-group">
+            <a href="#" class="list-group-item active">item one</a>
+            <a href="#" class="list-group-item list-group-item-danger">item two</a>
+            <a href="#" class="list-group-item">item three</a>
+            <a href="#" class="list-group-item disabled">item four</a>
+        </div>
+    </div>
+
+<!-- 
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">panel title</h3>
+            </div>
+            <div class="panel-body">
+                panel-content
+            </div>
+            <div class="panel-footer">panel footer</div>
+        </div>
+    </div> -->
+
+
+
+    <div class="alert alert-warning" role="alert">A warning alert</div>
+    <div class="alert alert-info" role="alert">A info alert</div>
+    <div class="alert alert-danger" role="alert">A danger alert</div>
+    <div class="alert alert-disabled" role="alert">A disabled alert</div>
+
+    <div class="alert alert-warning alert-disabled" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+        you can close this alert
+    </div>
+
+
+    <!-- progress bars -->
+     <div class="proogress">
+        <div class="progress-bar progress-bar-success progress-bar-striped" style="width:50%">
+            50%
+        </div>
+     </div>
+
+    <!-- <div class="text-center">
+        <img src="..." class="rounded" alt="...">
+    </div> -->
+
+
+
+      
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div style="height:400px"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
